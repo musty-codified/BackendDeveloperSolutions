@@ -53,9 +53,12 @@ public class StockController {
 
 
     @GetMapping()
-    public ApiResponse<Stock>getStocks(){
-
-        return null;
+    public ResponseEntity<ApiResponse>getStocks(){
+        List<Stock> stocks = stockDataInitializer.getStocks();
+        if (stocks.isEmpty()) {
+            return new ResponseEntity<>(responseProvider.error("No stocks found"), HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity<>(responseProvider.success(stocks), HttpStatus.OK);
     }
 
     private synchronized Long generateNewId() {
