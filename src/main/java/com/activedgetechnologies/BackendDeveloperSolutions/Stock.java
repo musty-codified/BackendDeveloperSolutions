@@ -28,4 +28,6 @@ public class Stock {
         this.name = name;
         this.currentPrice = currentPrice;
     }
+
+
 }
