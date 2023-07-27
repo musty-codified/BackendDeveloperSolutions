@@ -33,30 +33,12 @@ public class Exercise1 {
         int result3 = findSmallestNonOccurring(array3);
         int result4 = findSmallestNonOccurring(array4);
 
-
-
         System.out.println("Smallest non-occurring integer in Array1: " + result1); // Output: 5
         System.out.println("Smallest non-occurring integer in Array2: " + result2); // Output: 1
         System.out.println("Smallest non-occurring integer in Array3: " + result3); // Output: 5
         System.out.println("Smallest non-occurring integer in Array3: " + result4); // Output: 3
 
-
     }
-
-//    public static int findSmallestNonOccurringInteger(int[] nums) {
-//        HashSet<Integer> set = new HashSet<>();
-//
-//        for (int num : nums) {
-//            set.add(num);
-//        }
-//
-//        int smallestNonOccurring = 1;
-//        while (set.contains(smallestNonOccurring)) {
-//            smallestNonOccurring++;
-//        }
-//
-//        return smallestNonOccurring;
-//    }
 
 
 }

@@ -1,4 +1,4 @@
-package com.activedgetechnologies.BackendDeveloperSolutions;
+package com.activedgetechnologies.BackendDeveloperSolutions.exercise3;
 
 import lombok.Data;
 import org.springframework.boot.CommandLineRunner;
